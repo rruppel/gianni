@@ -1,0 +1,22 @@
+.region-header .block:not(.site-branding) {
+float: left;
+}
+
+.region-header .block li.menu-item{
+	text-decoration:none;
+	padding:0 15px;
+	line-height:32px;
+	height: auto;
+	display:inline-block;
+	text-align:center;
+
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+      border: solid 2px #333388;
+}
+
+
+.region-header .block-menu {
+    width: auto;   
+}

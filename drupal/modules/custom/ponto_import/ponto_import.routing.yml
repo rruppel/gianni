@@ -1,0 +1,17 @@
+## YAML Template.
+ponto_import_start:
+  path: 'ponto/import/start'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoImportController::start'
+    _title: 'Importação de Ponto - Início'
+  requirements:
+    _permission: 'access content'
+
+
+ponto_import_upload:
+  path: 'ponto/import/upload'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoImportController::upload'
+    _title: 'Importação de Ponto - Upload'
+  requirements:
+    _permission: 'access content'

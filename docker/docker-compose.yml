@@ -1,0 +1,33 @@
+gianni.dev:
+  restart: always
+  build: containers/nginx
+  hostname: gianni.dev
+  ports:
+   - "80:80"
+  links:
+   - php
+  volumes:
+   - ../drupal:/var/www/public_html
+   - ../drupal:/var/www/html
+php:
+  restart: always
+  build: containers/php
+  hostname: php.gianni.dev
+  ports:
+   - "9000:9000"
+  links:
+   - mysql
+  volumes:
+   - ../drupal:/var/www/public_html
+   - ../drupal:/var/www/html
+mysql:
+  restart: always
+  image: mysql:5.7
+  hostname: db.gianni.dev
+  ports:
+   - "3306:3306"
+  environment:
+   - MYSQL_ROOT_PASSWORD=root
+   - MYSQL_DATABASE=gianni
+   - MYSQL_USER=gianni
+   - MYSQL_PASSWORD=gianni

@@ -1,0 +1,11 @@
+{# empty Twig template #}
+<p>Selecione o seu arquivo do e-Ponto e envie abaixo:</p>
+
+<form action="{{ form_action }}" enctype='multipart/form-data' method="POST">
+    
+    <label>Selecionar Arquivo:</label>
+    <input type="file" name="ponto_file" /><br />
+    
+    <input type="submit" value="Enviar" />
+    
+</form>

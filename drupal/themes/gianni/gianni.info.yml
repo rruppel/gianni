@@ -1,0 +1,8 @@
+name: gianni
+type: theme
+description: 'Gianni theme based on Bartik'
+core: 8.x
+package: custom
+base theme: bartik
+libraries:
+  - gianni/base

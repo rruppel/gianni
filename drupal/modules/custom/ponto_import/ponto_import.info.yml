@@ -1,0 +1,6 @@
+name: Ponto Import
+description: Permite importar um CSV com o ponto dos funcionários, seguindo o modelo do e-Ponto.
+package: Custom
+
+type: module
+core: 8.x
