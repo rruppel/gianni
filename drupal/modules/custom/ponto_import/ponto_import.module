@@ -12,5 +12,10 @@ function ponto_import_theme(){
     'template' => 'ponto_import_start'
   ];
   
+  $theme['ponto_export_start'] = [
+    'variables' => ['form_action' => NULL],
+    'template' => 'ponto_export_start'
+  ];
+  
   return $theme;
 }

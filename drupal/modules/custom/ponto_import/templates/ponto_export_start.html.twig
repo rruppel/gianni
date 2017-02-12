@@ -1,10 +1,10 @@
 {# empty Twig template #}
-<p>Selecione o seu arquivo e envie abaixo:</p>
+<p>Selecione a data para exportação e clique em OK:</p>
 
 <form action="{{ form_action }}" enctype='multipart/form-data' method="POST">
     
-    <label>Selecionar Arquivo:</label>
-    <input type="file" name="ponto_file" /><br />
+    <label>Data:</label>
+    <input type="text" name="ponto_export_date" /><br />
     
     <input type="submit" value="Enviar" />
     

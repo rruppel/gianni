@@ -6,6 +6,14 @@ ponto_import_start:
     _title: 'Importação de Ponto - Início'
   requirements:
     _permission: 'access content'
+    
+ponto_seculum_import_start:
+  path: 'ponto/seculum/import/start'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoSeculumImportController::start'
+    _title: 'Importação de Ponto - Seculum - Início'
+  requirements:
+    _permission: 'access content'
 
 
 ponto_import_upload:
@@ -15,3 +23,41 @@ ponto_import_upload:
     _title: 'Importação de Ponto - Upload'
   requirements:
     _permission: 'access content'
+
+ponto_seculum_import_upload:
+  path: 'ponto/seculum/import/upload'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoSeculumImportController::upload'
+    _title: 'Importação de Ponto - Seculum - Upload'
+  requirements:
+    _permission: 'access content'
+
+
+
+
+ponto_export_start:
+  path: 'ponto/export/start'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoExportController::start'
+    _title: 'Exportação de Ponto - Início'
+  requirements:
+    _permission: 'access content'
+
+
+ponto_export_download:
+  path: 'ponto/export/download'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\PontoExportController::download'
+    _title: 'Exportação de Ponto - Download'
+  requirements:
+    _permission: 'access content'
+
+
+folha_ponto:
+  path: 'folha-de-ponto'
+  defaults:
+    _controller: '\Drupal\ponto_import\Controller\FolhaPontoController::index'
+    _title: 'Folha de Ponto'
+  requirements:
+    _permission: 'access content'
+  
