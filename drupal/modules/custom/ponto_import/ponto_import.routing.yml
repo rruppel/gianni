@@ -38,10 +38,13 @@ ponto_seculum_import_upload:
 ponto_export_start:
   path: 'ponto/export/start'
   defaults:
-    _controller: '\Drupal\ponto_import\Controller\PontoExportController::start'
+    _form:  '\Drupal\ponto_import\Form\ExportPonto'
     _title: 'Exportação de Ponto - Início'
   requirements:
     _permission: 'access content'
+ 
+    
+    
 
 
 ponto_export_download:
